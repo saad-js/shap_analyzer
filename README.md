@@ -39,7 +39,7 @@ Explaining machine learning models with native SHAP often requires tedious array
 
 ## 📦 Installation
 
-Install directly via `pip`:
+Install directly via `pip` (**Recommended**):
 
 ```bash
 pip install shap_analyzer
@@ -49,7 +49,7 @@ pip install shap_analyzer
 Or install locally in editable mode for development:
 
 ```bash
-git clone [https://github.com/](https://github.com/)[YOUR_GITHUB_USERNAME]/shap_analyzer.git
+git clone https://github.com/saad-js/shap_analyzer.git
 cd shap_analyzer
 py -m pip install -e .
 
@@ -98,7 +98,8 @@ Contributions make the open-source community an amazing place to learn, inspire,
 Click the **Fork** button at the top right of this repository page.
 2. **Clone your Fork**
 ```bash
-git clone [https://github.com/](https://github.com/)[YOUR_GITHUB_USERNAME]/shap_analyzer.git
+
+git clone https://github.com/saad-js/shap_analyzer.git
 cd shap_analyzer
 
 ```
@@ -146,9 +147,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## ✉️ Contact & Support
 
-* **Author:** [YOUR_NAME] - [[YOUR_EMAIL@example.com](https://www.google.com/search?q=mailto%3AYOUR_EMAIL%40example.com)]
-* **Project Link:** [https://github.com/[YOUR_GITHUB_USERNAME]/shap_analyzer](https://www.google.com/search?q=https://github.com/%5BYOUR_GITHUB_USERNAME%5D/shap_analyzer)
+* **Author:** ***ABU SAAD*** - [[abusaadd44@gmail.com](https://www.google.com/search?q=mailto%3Aabusaadd44@gmail.com)]
+* **Project Link:** [[https://github.com/saad-js/shap_analyzer](https://www.google.com/search?q=https://github.com/saad-js/shap_analyzer)]
 
-```
-
-```
