@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: shap_analyzer
+Version: 0.1.3
+Summary: A lightweight wrapper for quick SHAP model explainability analysis.
+Author-email: Abu Saad <abusaadd44@gmail.com>
+Requires-Python: >=3.8
+Requires-Dist: shap>=0.42.0
+Requires-Dist: pandas>=1.5.0
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: matplotlib>=3.5.0
