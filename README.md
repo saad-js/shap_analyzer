@@ -1,5 +1,5 @@
 
-# shap-analyzer 🚀
+# shap-analyzer 🔍
 
 [![PyPI version](https://img.shields.io/pypi/v/shap_analyzer.svg)](https://pypi.org/project/shap_analyzer/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -23,18 +23,22 @@ Explaining machine learning models with native SHAP often requires tedious array
 | **Plot Customization** | Requires writing custom Matplotlib figure wrappers for every chart | Ready-to-use, clean visualizer modules for sequential or grouped display |
 
 ---
+## 🛠️ API & Function Reference
 
-## 🖼️ Output Plots Gallery
-
-| Plot Type | Description | Preview / Screenshot |
+| Method / Function | Signature | Description |
 | :--- | :--- | :--- |
-| **Summary (Beeswarm)** | Displays global feature impact and value distributions across rows. | `![Beeswarm Plot](docs/images/summary_plot.png)` *(Add image link)* |
-| **Global Bar** | Shows mean absolute SHAP values ranked by feature importance. | `![Bar Plot](docs/images/bar_plot.png)` *(Add image link)* |
-| **Local Waterfall** | Breaks down prediction drivers for a single target row. | `![Waterfall Plot](docs/images/waterfall_plot.png)` *(Add image link)* |
-| **Heatmap** | Visualizes SHAP value intensity across multiple sample rows. | `![Heatmap Plot](docs/images/heatmap_plot.png)` *(Add image link)* |
-| **Feature Dependence** | Uncovers non-linear relationships and feature interaction effects. | `![Dependence Plot](docs/images/dependence_plot.png)` *(Add image link)* |
-| **Decision Trajectory** | Traces feature contribution paths leading to a model's final output. | `![Decision Plot](docs/images/decision_plot.png)` *(Add image link)* |
+| **`analyze`** | `analyze(model, X_data, sample_size=None, class_index=0)` | Factory function that initializes `ModelExplainer` and computes SHAP values with automatic multi-class slicing. |
+| **`.get_feature_importance()`** | `exp.get_feature_importance()` | Returns a pandas DataFrame of global mean absolute SHAP values sorted by feature importance. |
+| **`.get_instance_explanation()`** | `exp.get_instance_explanation(index=0)` | Returns individual SHAP contribution scores and raw feature values for a single specified row. |
+| **`.get_top_drivers()`** | `exp.get_top_drivers(index=0, top_n=3)` | Returns a dictionary containing the top N positive and negative driving features for a specific row prediction. |
+| **`plot_summary`** | `plot_summary(explainer_obj)` | Renders a Beeswarm summary plot showing global feature impact and value distributions. |
+| **`plot_bar`** | `plot_bar(explainer_obj)` | Renders a global bar chart of mean absolute SHAP values ranked by feature importance. |
+| **`plot_local`** | `plot_local(explainer_obj, index=0)` | Renders a local Waterfall plot breaking down prediction drivers for a single target row. |
+| **`plot_dependence`** | `plot_dependence(explainer_obj, feature_name)` | Renders a feature interaction plot to analyze non-linear dependencies. |
+| **`plot_heatmap`** | `plot_heatmap(explainer_obj, num_samples=50)` | Renders a SHAP heatmap across multiple sample rows. |
+| **`plot_decision`** | `plot_decision(explainer_obj, index=0)` | Renders a decision trajectory plot showing cumulative feature contribution paths for a row prediction. |
 
+---
 ---
 
 ## 📦 Installation
